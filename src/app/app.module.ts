@@ -5,19 +5,16 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { routing } from './app.routing';
-import { RunAwayComponent } from './run-away/run-away.component';
-import { GetWeaponComponent } from './get-weapon/get-weapon.component';
-import { PlayDeadComponent } from './play-dead/play-dead.component';
-import 'rxjs/add/operator/map';
+import { masterFirebaseConfig } from './api-keys'
+
 import { AngularFireModule } from 'angularfire2';
 import { StoryComponent } from './story/story.component';
 
 export const firebaseConfig = {
-  apiKey: "AIzaSyA1uuhOcrM1ZAlKVXHyT1PV1j3th2Eorto",
-  authDomain: "choose-adventure.firebaseapp.com",
-  databaseURL: "https://choose-adventure.firebaseio.com",
-  storageBucket: "choose-adventure.appspot.com",
-  messagingSenderId: "531050852988"
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
 };
 
 
@@ -25,9 +22,6 @@ export const firebaseConfig = {
   declarations: [
     AppComponent,
     HomepageComponent,
-    RunAwayComponent,
-    GetWeaponComponent,
-    PlayDeadComponent,
     StoryComponent
   ],
   imports: [
