@@ -1,7 +1,11 @@
 <h3>Story</h3>
 
-<div *ngFor="let each of story | async"  class="panel panel-default">
+<div  class="panel panel-default">
   <div class="panel-body">
-    <h3><em>{{each.string}}</em></h3>
+    <h3><em>{{(story | async)?.string}}</em></h3>
+    <ul >
+      <button class="btn" routerLink="story/{{(story | async)?.options[0].routeId}}">{{(story | async)?.options[0].option1}}</button>
+      <button class="btn" routerLink="story/{{(story | async)?.options[1].routeId}}">{{(story | async)?.options[1].option2}}</button>
+    </ul>
   </div>
 </div>

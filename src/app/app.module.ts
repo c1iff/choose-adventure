@@ -10,6 +10,7 @@ import { GetWeaponComponent } from './get-weapon/get-weapon.component';
 import { PlayDeadComponent } from './play-dead/play-dead.component';
 import 'rxjs/add/operator/map';
 import { AngularFireModule } from 'angularfire2';
+import { StoryComponent } from './story/story.component';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyA1uuhOcrM1ZAlKVXHyT1PV1j3th2Eorto",
@@ -26,7 +27,8 @@ export const firebaseConfig = {
     HomepageComponent,
     RunAwayComponent,
     GetWeaponComponent,
-    PlayDeadComponent
+    PlayDeadComponent,
+    StoryComponent
   ],
   imports: [
     BrowserModule,

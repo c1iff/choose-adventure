@@ -4,13 +4,17 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
 @Injectable()
 export class StoryService {
-  story: FirebaseListObservable<any[]>;
+  story;
 
   constructor(private angularFire: AngularFire) {
-    this.story = angularFire.database.list('storyOptions')
+
   }
 
-  getStoryComponent() {
-    return this.story;
+  getFirst() {
+    return this.angularFire.database.object('/raccoonAttacks/0')
+  }
+
+  getStoryComponent(storyId) {
+    return this.angularFire.database.object('/raccoonAttacks/' + storyId);
   }
 }

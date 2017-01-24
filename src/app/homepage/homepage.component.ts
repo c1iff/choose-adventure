@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { StoryService } from '../story.service';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -10,12 +11,15 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
   providers: [StoryService]
 })
 export class HomepageComponent implements OnInit {
-  story: FirebaseListObservable<any[]>;
+  story;
 
-  constructor(private storyService: StoryService) { }
+  constructor(private storyService: StoryService, private router: Router) { }
 
   ngOnInit() {
-    this.story = this.storyService.getStoryComponent()
+    this.story = this.storyService.getFirst()
+  }
+  getStoryPage(id){
+    this.router.navigate(['story', id])
   }
 
 }

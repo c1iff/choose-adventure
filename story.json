@@ -1,32 +1,76 @@
-{ "storyOptions": [{
-    "id": "1",
+{ "raccoonAttacks": [{
     "string": "You come accross a pack of ravenous raccoons. What do you want to do?",
     "options": [
       {"option1": "Run Away",
-      "routeId": "2"},
+      "routeId": "1"},
       {"option2": "Play Dead",
-      "routeId": "3"}
+      "routeId": "2"}
     ]
     },
     {
-    "id": "2",
     "string": "  You start running through the streets as fast as you can.  Terror grips you and you trip over a rock.  Turnning around you see the pack of raccoons decend upon you..",
     "options": [
-      {"option1": "something else",
-      "routeId": "4"},
-      {"option2": "something else",
-      "routeId": "5"}
+      {"option1": "Find a Weapon",
+      "routeId": "3"},
+      {"option2": "Start Singing",
+      "routeId": "4"}
     ]
     },
     {
-    "id": "3",
-    "string": "The Raccoon approaches - he may have rabies...",
+    "string": " The Raccoon approaches - he may have rabies...",
     "options": [
-      {"option1": "something else",
-      "routeId": "6"},
-      {"option2": "something else",
+      {"option1": "Cry",
+      "routeId": "5"},
+      {"option2": "Get up and fight",
+      "routeId": "4"}
+    ]
+    },
+    {
+    "string": "You find a broken beer bottle and smash it into the face of the nearest raccoon.",
+    "options": [
+      {"option1": "Keep Fighting",
+      "routeId": "4"},
+      {"option2": "Play Dead",
+      "routeId": "2"}
+    ]
+    },
+
+    {
+    "string": "You start singing a sweet melody and the raccoons slow back away",
+    "options": [
+      {"option1": "Go Home",
+      "routeId": "7"},
+      {"option2": "Go to the Bar",
       "routeId": "7"}
     ]
-    }
+  },
+  {
+  "string": "The sound of you crying infuriates the raccoon and they attack with intesity. Your are killed and eaten by raccoons",
+  "options": [
+    {"option1": "Start Over",
+    "routeId": "0"},
+    {"option2": "Start Over",
+    "routeId": "0"}
+  ]
+  },
+  {
+  "string": "Despite you best effort you are overtaken by feroucious racconns.  You are dead",
+  "options": [
+    {"option1": "Start Over",
+    "routeId": "0"},
+    {"option2": "Start Over",
+    "routeId": "0"}
+  ]
+  },
+  {
+  "string": "You survived the raccoon attack",
+  "options": [
+    {"option1": "!!!!!",
+    "routeId": "0"},
+    {"option2": "!!!!!",
+    "routeId": "0"}
+  ]
+  }
+
   ]
 }
