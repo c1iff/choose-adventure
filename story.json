@@ -1,0 +1,32 @@
+{ "storyOptions": [{
+    "id": "1",
+    "string": "You come accross a pack of ravenous raccoons. What do you want to do?",
+    "options": [
+      {"option1": "Run Away",
+      "routeId": "2"},
+      {"option2": "Play Dead",
+      "routeId": "3"}
+    ]
+    },
+    {
+    "id": "2",
+    "string": "  You start running through the streets as fast as you can.  Terror grips you and you trip over a rock.  Turnning around you see the pack of raccoons decend upon you..",
+    "options": [
+      {"option1": "something else",
+      "routeId": "4"},
+      {"option2": "something else",
+      "routeId": "5"}
+    ]
+    },
+    {
+    "id": "3",
+    "string": "The Raccoon approaches - he may have rabies...",
+    "options": [
+      {"option1": "something else",
+      "routeId": "6"},
+      {"option2": "something else",
+      "routeId": "7"}
+    ]
+    }
+  ]
+}

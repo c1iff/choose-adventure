@@ -1,0 +1,7 @@
+<h3>Story</h3>
+
+<div *ngFor="let each of story | async"  class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{each.string}}</em></h3>
+  </div>
+</div>
